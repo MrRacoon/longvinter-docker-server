@@ -14,15 +14,15 @@ services:
       - "27016:27016/tcp"
       - "27016:27016/udp"
     environment:
-      CFG_SERVER_NAME: "Unnamed Island"
-      CFG_MAX_PLAYERS: "32"
-      CFG_SERVER_MOTD: "Welcome to Longvinter Island!"
-      CFG_PASSWORD: ""
-      CFG_COMMUNITY_WEBSITE: "www.longvinter.com"
-      CFG_ADMIN_STEAM_ID: ""
+      CFG_SERVER_NAME: "MrRacoonCity"
+      CFG_MAX_PLAYERS: "16"
+      CFG_SERVER_MOTD: "Welcome to MrRacoonCity!"
+      CFG_PASSWORD: "thereisnospoon"
+      CFG_COMMUNITY_WEBSITE: "https://github.com/MrRacoon/longvinter-docker-server"
+      CFG_ADMIN_STEAM_ID: "76561198041665835"
       CFG_ENABLE_PVP: "true"
       CFG_TENT_DECAY: "true"
-      CFG_MAX_TENTS: "2"
+      CFG_MAX_TENTS: "5"
       CFG_GAME_PORT: "7777"
       CFG_QUERY_PORT: "27016"
     volumes:
@@ -32,4 +32,3 @@ services:
 volumes:
   longvinter_data:
     name: longvinter_data
-  
